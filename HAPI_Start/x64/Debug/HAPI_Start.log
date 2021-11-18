@@ -1,0 +1,7 @@
+﻿  main.cpp
+F:\HAPI broken\HAPI_Start\main.cpp(43,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+F:\HAPI broken\HAPI_Start\main.cpp(73,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\HAPI broken\HAPI_Start\main.cpp(73,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Visuals.cpp
+  Generating Code...
+  HAPI_Start.vcxproj -> F:\HAPI broken\x64\Debug\HAPI_Start.exe

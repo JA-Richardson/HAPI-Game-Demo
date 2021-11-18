@@ -1,0 +1,36 @@
+Andrew Richardson
+Milestone 2 <version 1> and <29/10/21>
+--------------------------------
+
+New Functionality
+-----------------
+Program now loads two textures, a background and a player sprite. The player sprite can be moved in 8 directions through keyboard input using WASD
+
+Code Additions
+--------------
+Functions to blit based on alpha values
+Functions to load in multiple textures
+Ability to move player texture/sprite based on keyboard input
+Error message displays if texture is missing
+Deletes textures when loop is finished
+
+Tests
+-----
+Moving sprite in 8 directions, cardinal and ordinal
+Variable framerates depending on if program is in release of debug setting
+Average of 65FPS in debug
+Average of 175FPS in release
+Clearing to screen removed as being used, FPS values increased significantly
+Average of 100FPS in debug
+Average of 300+FPS in release
+Sprite unable to leave screen boundaries
+Alpha blend not working correctly, was only checking against red value as code contained error meaning all channels checked against same value
+Alpha blend fixed so all channels checked correctly
+
+Notes
+-----
+
+Attempted to have multiple sprites so ship can face different directions when moving and will stay in that position
+Sprite would change facing direction and hold the last position when no keyboard input was detected
+Problem as there would always be a sprite facing north at the same time
+Code removed until it can be fixed, sprites can still be found in the data folder
