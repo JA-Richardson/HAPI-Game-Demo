@@ -1,0 +1,25 @@
+Andrew Richardson
+Milestone 3 <version 1> and <18/11/21>
+--------------------------------
+
+New Functionality
+-----------------
+Code has been moved into individual classes, main.cpp has been cleaned up, clipping function added so texture can pass out of screen bounds. Gamepad controls added
+
+Code Additions
+--------------
+Clipping function
+Classes
+Gamepad control with rumble functionality
+
+Tests
+-----
+Moving sprite off of the top, bottom, left and right sides of screen
+Moving sprite around screen to check gamepad input works correctly
+Moving sprite through set area on screen to check if gamepad rumble feature is working as planned
+Spawning multiple sprites at once
+
+Notes
+-----
+
+
