@@ -1,7 +1,8 @@
-# HAPI-MS3
+# HAPI-Game-Demo
 
-GEC Milestone 3 project
+GEC finished game demo
 
-Games Engine Construction Milestone 3 project
+Games Engine Construction finished demo.
+See the readme file within the repository for further details.
 
 Created using the HAPI API provided by Keith Ditchburn
