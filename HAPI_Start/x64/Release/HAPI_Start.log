@@ -1,32 +1,9 @@
-﻿  Border.cpp
-  BulletEntity.cpp
-F:\HAPI project\HAPI_Start\BulletEntity.cpp(24,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\HAPI project\HAPI_Start\BulletEntity.cpp(24,30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  EnemyEntity.cpp
-F:\HAPI project\HAPI_Start\EnemyEntity.cpp(9,23): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-F:\HAPI project\HAPI_Start\EnemyEntity.cpp(25,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-F:\HAPI project\HAPI_Start\EnemyEntity.cpp(41,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-F:\HAPI project\HAPI_Start\EnemyEntity.cpp(58,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\HAPI project\HAPI_Start\EnemyEntity.cpp(58,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  Entity.cpp
-F:\HAPI project\HAPI_Start\Entity.cpp(56,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-F:\HAPI project\HAPI_Start\Entity.cpp(57,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  main.cpp
-  PlayerEntity.cpp
+﻿  PlayerEntity.cpp
 F:\HAPI project\HAPI_Start\PlayerEntity.cpp(14,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 F:\HAPI project\HAPI_Start\PlayerEntity.cpp(32,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 F:\HAPI project\HAPI_Start\PlayerEntity.cpp(32,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\HAPI project\HAPI_Start\PlayerEntity.cpp(58,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 F:\HAPI project\HAPI_Start\PlayerEntity.cpp(58,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\HAPI project\HAPI_Start\PlayerEntity.cpp(58,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 F:\HAPI project\HAPI_Start\PlayerEntity.cpp(100,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 F:\HAPI project\HAPI_Start\PlayerEntity.cpp(100,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  Sprite.cpp
-F:\HAPI project\HAPI_Start\Sprite.cpp(121,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\HAPI project\HAPI_Start\Sprite.cpp(121,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  vector2.cpp
-  Visuals.cpp
-  World.cpp
-F:\HAPI project\HAPI_Start\World.cpp(100,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Generating Code...
-F:\HAPI project\HAPI_Start\Entity.cpp(45): warning C4715: 'Entity::hasCollided': not all control paths return a value
   HAPI_Start.vcxproj -> F:\HAPI project\x64\Release\HAPI_Start.exe

@@ -5,7 +5,7 @@
 #include <HAPI_lib.h>
 using namespace HAPISPACE;
 
-float speed{ 2.0f };
+float speed{ 0.2f };
 
 
 //stops player moving faster diagonally 
@@ -55,43 +55,43 @@ void PlayerEntity::Update(Visuals &vis, World& w, int& score)
 	HAPI.GetTime();
 	if (keyScan.scanCode['Q'])
 	{
-		w.SpawnBullet(posX, posY);
+		w.SpawnBullet((posX + 15), (posY));
 	}
 	if (keyScan.scanCode['S'] && (keyScan.scanCode['D']))//South East
 	{
-		posY += cathetus(speed);
-		posX += cathetus(speed);
+		posY += cathetus(speed * w.getDeltaTime());
+		posX += cathetus(speed * w.getDeltaTime());
 	}
 	else if (keyScan.scanCode['W'] && (keyScan.scanCode['A']))//North West
 	{
-		posY -= cathetus(speed);
-		posX -= cathetus(speed);
+		posY -= cathetus(speed * w.getDeltaTime());
+		posX -= cathetus(speed * w.getDeltaTime());
 	}
 	else if (keyScan.scanCode['W'] && (keyScan.scanCode['D']))//North East
 	{
-		posY -= cathetus(speed);
-		posX += cathetus(speed);
+		posY -= cathetus(speed * w.getDeltaTime());
+		posX += cathetus(speed * w.getDeltaTime());
 	}
 	else if (keyScan.scanCode['S'] && (keyScan.scanCode['A']))//South West
 	{
-		posY += cathetus(speed);
-		posX -= cathetus(speed);
+		posY += cathetus(speed * w.getDeltaTime());
+		posX -= cathetus(speed * w.getDeltaTime());
 	}
 	else if (keyScan.scanCode['W'])//North
 	{
-		posY -= cathetus(speed);
+		posY -= speed * w.getDeltaTime();
 	}
 	else if (keyScan.scanCode['D'])//East
 	{
-		posX += cathetus(speed);
+		posX += speed * w.getDeltaTime();
 	}
 	else if (keyScan.scanCode['S'])//South
 	{
-		posY += cathetus(speed);
+		posY += speed * w.getDeltaTime();
 	}
 	else if (keyScan.scanCode['A'])//West
 	{
-		posX -= cathetus(speed);
+		posX -= speed * w.getDeltaTime();
 	}
 	
 	//controller input
@@ -101,41 +101,41 @@ void PlayerEntity::Update(Visuals &vis, World& w, int& score)
 	}
 	if ((inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_Y] > 15000) && (inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_X] > 15000))
 	{
-		posY -= cathetus(speed);
-		posX += cathetus(speed);
+		posY -= cathetus(speed * w.getDeltaTime());
+		posX += cathetus(speed * w.getDeltaTime());
 	}
 	else if ((inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_X] > 15000) && (inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_Y] < -15000))
 	{
-		posY += cathetus(speed);
-		posX += cathetus(speed);
+		posY += cathetus(speed * w.getDeltaTime());
+		posX += cathetus(speed * w.getDeltaTime());
 	}
 	else if ((inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_Y] < -15000) && (inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_X] < -15000))
 	{
-		posY += cathetus(speed);
-		posX -= cathetus(speed);
+		posY += cathetus(speed * w.getDeltaTime());
+		posX -= cathetus(speed * w.getDeltaTime());
 	}
 	else if ((inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_X] < -15000) && (inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_Y] > 15000))
 	{
-		posY -= cathetus(speed);
-		posX -= cathetus(speed);
+		posY -= cathetus(speed * w.getDeltaTime());
+		posX -= cathetus(speed * w.getDeltaTime());
 	}
 	else if (inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_X] > 15000)
 	{
 
-		posX += speed;
+		posX += speed * w.getDeltaTime();
 	}
 	else if (inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_X] < -15000)
 	{
-		posX -= speed;
+		posX -= speed * w.getDeltaTime();
 	}
 	else if (inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_Y] > 15000)
 	{
-		posY -= speed;
+		posY -= speed * w.getDeltaTime();
 
 	}
 	else if (inputScan.isAttached && inputScan.analogueButtons[HK_ANALOGUE_LEFT_THUMB_Y] < -15000)
 	{
-		posY += speed;
+		posY += speed * w.getDeltaTime();
 	}
 
 	

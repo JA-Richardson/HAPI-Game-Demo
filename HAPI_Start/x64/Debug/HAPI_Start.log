@@ -1,33 +1,9 @@
-﻿  World.cpp
-F:\HAPI project\HAPI_Start\World.cpp(100,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-HAPI_Debug64.lib(Error.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(Error.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(HapiCore.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(HapiCore.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(HapiOsSFML.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(HapiOsSFML.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(HapiSoundSFML.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(HapiSoundSFML.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(PerfCounters.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(PerfCounters.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(SFMLFontManager.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(SFMLFontManager.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(ALCheck.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(ALCheck.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(AudioDevice.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(AudioDevice.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(Music.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(Music.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(SoundBuffer.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(SoundBuffer.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(SoundFileFactory.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(SoundFileFactory.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(SoundFileReaderFlac.obj) : warning LNK4099: PDB '' was not found with 'HAPI_Debug64.lib(SoundFileReaderFlac.obj)' or at ''; linking object as if no debug info
-HAPI_Debug64.lib(SoundFileWriterFlac.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(SoundFileWriterFlac.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(SoundFileWriterOgg.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(SoundFileWriterOgg.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(SoundFileWriterWav.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(SoundFileWriterWav.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(Font.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(Font.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(GLCheck.obj) : warning LNK4099: PDB '' was not found with 'HAPI_Debug64.lib(GLCheck.obj)' or at ''; linking object as if no debug info
-HAPI_Debug64.lib(Image.obj) : warning LNK4099: PDB '' was not found with 'HAPI_Debug64.lib(Image.obj)' or at ''; linking object as if no debug info
-HAPI_Debug64.lib(ImageLoader.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(ImageLoader.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(Shader.obj) : warning LNK4099: PDB '' was not found with 'HAPI_Debug64.lib(Shader.obj)' or at ''; linking object as if no debug info
-HAPI_Debug64.lib(Texture.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(Texture.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(VertexArray.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(VertexArray.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(String.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(String.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(GlContext.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(GlContext.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(JoystickImpl.obj) : warning LNK4099: PDB '' was not found with 'HAPI_Debug64.lib(JoystickImpl.obj)' or at ''; linking object as if no debug info
-HAPI_Debug64.lib(VideoModeImpl.obj) : warning LNK4099: PDB '' was not found with 'HAPI_Debug64.lib(VideoModeImpl.obj)' or at ''; linking object as if no debug info
-HAPI_Debug64.lib(WglContext.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(WglContext.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(WindowImplWin32.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(WindowImplWin32.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(Window.obj) : warning LNK4099: PDB 'HAPI_Debug64.pdb' was not found with 'HAPI_Debug64.lib(Window.obj)' or at 'F:\HAPI project\x64\Debug\HAPI_Debug64.pdb'; linking object as if no debug info
-HAPI_Debug64.lib(Utility.obj) : warning LNK4099: PDB '' was not found with 'HAPI_Debug64.lib(Utility.obj)' or at ''; linking object as if no debug info
+﻿  PlayerEntity.cpp
+F:\HAPI project\HAPI_Start\PlayerEntity.cpp(14,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+F:\HAPI project\HAPI_Start\PlayerEntity.cpp(32,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\HAPI project\HAPI_Start\PlayerEntity.cpp(32,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\HAPI project\HAPI_Start\PlayerEntity.cpp(58,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\HAPI project\HAPI_Start\PlayerEntity.cpp(58,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\HAPI project\HAPI_Start\PlayerEntity.cpp(100,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\HAPI project\HAPI_Start\PlayerEntity.cpp(100,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   HAPI_Start.vcxproj -> F:\HAPI project\x64\Debug\HAPI_Start.exe

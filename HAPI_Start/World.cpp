@@ -110,49 +110,51 @@ void World::Run()
 	const HAPI_TKeyboardData& keyScan = HAPI.GetKeyboardData();
 	while (HAPI.Update())
 	{
+		//delta time calculation to smooth the game
+		float time = clock();
+		deltaTime = time - oldTime;
+		oldTime = time;
 		
-		if (gametick > 10)
+		fireDelay += 1;
+		
+		
+			
+		w_vis.ClippedRender("Background", 0, BgY);
+		w_vis.ClippedRender("Background", 0, Bg2Y);
+			
+		BgY = BgY + 0.2 * deltaTime;
+		Bg2Y = Bg2Y + 0.2 * deltaTime;
+		if (BgY >= 1125)
+			BgY = 0;
+		if (Bg2Y >= 0)
+			Bg2Y = -1125;
+		std::string playerScore = "Score: " + std::to_string(score);
+		HAPI.RenderText(100, 100, HAPI_TColour::WHITE, playerScore, 20, eBold);
+		for (Entity* p : w_entityVector)
+			p->Update(w_vis, *this, score);
+			
+		//collision detection loop
+		size_t i = 0;
+		for (Entity* p : w_entityVector)
 		{
-			fireDelay += 1;
-			w_vis.ClippedRender("Background", 0, BgY);
-			w_vis.ClippedRender("Background", 0, Bg2Y);
-			
-			BgY = BgY + 1;
-			Bg2Y = Bg2Y + 1;
-			if (BgY >= 1125)
-				BgY = 0;
-			if (Bg2Y >= 0)
-				Bg2Y = -1125;
-			std::string playerScore = "Score: " + std::to_string(score);
-			HAPI.RenderText(100, 100, HAPI_TColour::WHITE, playerScore, 20, eBold);
-			for (Entity* p : w_entityVector)
-				p->Update(w_vis, *this, score);
-			
-			//collision detection loop
-			size_t i = 0;
-			for (Entity* p : w_entityVector)
+			if (p->getIsAlive() == true)
 			{
-				if (p->getIsAlive() == true)
+				if (p->getFaction() != Faction::Neutral)
 				{
-					if (p->getFaction() != Faction::Neutral)
+					for (size_t j = i + 1; j < w_entityVector.size(); j++)
 					{
-						for (size_t j = i + 1; j < w_entityVector.size(); j++)
+						if (p->hasCollided(w_entityVector[i], w_entityVector[j]))
 						{
-							if (p->hasCollided(w_entityVector[i], w_entityVector[j]))
-							{
 
-							}
 						}
 					}
 				}
-				i++;
 			}
-			gametick = 0;
+			i++;
 		}
-		else
-		{
-			gametick++;
-		}
+			
+		
+		
 		//win condtion and restart system
 		HAPI_UserResponse response;
 		if (score >= 100) 

@@ -11,7 +11,8 @@ private:
 	void LoadLevel();
 	int score{ 0 };
 	void LoadSprites();
-
+	float deltaTime{ 0 };
+	float oldTime{ 0 };
 
 	size_t bulletStartIndex{ 0 };
 	size_t bulletEndIndex{ 20 };
@@ -19,12 +20,14 @@ private:
 	Visuals w_vis;
 	std::vector<Entity*> w_entityVector;
 	std::vector<BulletEntity*> bulletVec;
-	
-	
+
+
 public:
 	void Run();
 	~World();
 	void SpawnBullet(int X, int Y);
 	void RestartGame();
+	float getDeltaTime(){ return deltaTime; };
+	
 };
 

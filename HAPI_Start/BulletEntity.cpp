@@ -1,9 +1,11 @@
 #include "BulletEntity.h"
+#include "World.h"
 
 void BulletEntity::Update(Visuals& vis, World& w, int& score)
 {
+	
 	renderEntity(vis);
-	posY -= 5;
+	posY -= 1 * w.getDeltaTime();
 }
 
 //stops entity rendering when killed

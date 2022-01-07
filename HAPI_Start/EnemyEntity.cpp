@@ -1,4 +1,5 @@
 #include "EnemyEntity.h"
+#include "World.h"
 
 
 
@@ -33,7 +34,7 @@ void EnemyEntity::Update(Visuals &vis, World& w, int& score)
 		renderEntity(vis);
 		if (count > 5)
 		{
-			posY += 5;
+			posY += 0.5 * w.getDeltaTime();
 			count = 0;
 		}
 		else if (posY > 1130)
