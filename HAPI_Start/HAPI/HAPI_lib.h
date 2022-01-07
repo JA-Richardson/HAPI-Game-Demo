@@ -45,7 +45,7 @@ namespace HAPISPACE {
 
 		// Tells HAPI to display (or not) the frames per second
 		// Optionally can provide position and colour
-		virtual bool SetShowFPS(bool set, int x=0, int y=0, HAPI_TColour& col=HAPI_TColour::WHITE) = 0;
+		virtual bool SetShowFPS(bool set, int width=0, int height=0, HAPI_TColour& col=HAPI_TColour::WHITE) = 0;
 
 		// Retrieve the current FPS as a value
 		virtual int GetFPS() const = 0;
@@ -148,12 +148,12 @@ namespace HAPISPACE {
 
 		// Allows text to be drawn on the screen at a position and with a specified fill colour with the current font
 		// Text size and flags for bold, italic etc. are optional
-		virtual bool RenderText(int x, int y, HAPI_TColour fillColour, const std::string& text,
+		virtual bool RenderText(int width, int height, HAPI_TColour fillColour, const std::string& text,
 			int textSize=12,unsigned int styleFlags=eRegular) = 0;
 
 		// As RenderText but allows you to specify another colour to act as an outline to the text and how thick it should be
 		// Can also provide a clip area
-		virtual bool RenderText(int x, int y, HAPI_TColour fillColour, HAPI_TColour outlineColour,
+		virtual bool RenderText(int width, int height, HAPI_TColour fillColour, HAPI_TColour outlineColour,
 			float outlineThickness, const std::string& text,
 			int textSize = 12, unsigned int styleFlags = eRegular,
 			int clipLeft = 0, int clipRight = 0, int clipTop = 0, int clipBottom = 0) = 0;
@@ -163,7 +163,7 @@ namespace HAPISPACE {
 		// Can also provide a clip area
 		// If write alpha is true then the full colour is rendered but alpha set appropriately
 		// - useful when subsequently blitting this surface to another one
-		virtual bool RenderText(int x, int y, HAPI_TColour fillColour, HAPI_TColour outlineColour,
+		virtual bool RenderText(int width, int height, HAPI_TColour fillColour, HAPI_TColour outlineColour,
 			float outlineThickness, const std::string& text, BYTE *surface, int surfaceWidth, int surfaceHeight,
 			int textSize = 12, unsigned int styleFlags = eRegular,bool writeAlpha = true,
 			int clipLeft=0, int clipRight=0,int clipTop=0, int clipBottom=0) = 0;

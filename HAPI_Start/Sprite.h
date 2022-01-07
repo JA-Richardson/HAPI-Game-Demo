@@ -14,6 +14,7 @@ public:
 	void RenderBG(BYTE* screen, int width,  int posX, int posY);
 	/*void RenderPlayer(BYTE* screen, int width, int posX, int posY);*/
 	void ClippedRender(BYTE* screen, int screenWidth, int screenHeight, int posX, int posY);
+	Border getSpriteBorder(const std::string& filename, float posX,  float posY);
 	~Sprite();
 };
 
