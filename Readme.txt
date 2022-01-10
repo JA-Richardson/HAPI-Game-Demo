@@ -1,5 +1,6 @@
 Sounds files sourced from https://www.zapsplat.com
 Non-provided sprites sourced from:  https://opengameart.org/users/bonsaiheldin
+Background sourced from: https://www.nasa.gov/feature/goddard/2021/hubble-spots-double-quasars-in-merging-galaxies
 
 A score of 100 wins the game.
 

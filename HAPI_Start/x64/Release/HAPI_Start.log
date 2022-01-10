@@ -1,9 +1,4 @@
-﻿  PlayerEntity.cpp
-F:\HAPI project\HAPI_Start\PlayerEntity.cpp(14,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-F:\HAPI project\HAPI_Start\PlayerEntity.cpp(32,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\HAPI project\HAPI_Start\PlayerEntity.cpp(32,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\HAPI project\HAPI_Start\PlayerEntity.cpp(58,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\HAPI project\HAPI_Start\PlayerEntity.cpp(58,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\HAPI project\HAPI_Start\PlayerEntity.cpp(100,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\HAPI project\HAPI_Start\PlayerEntity.cpp(100,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+﻿  World.cpp
+F:\HAPI project\HAPI_Start\World.cpp(100,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+F:\HAPI project\HAPI_Start\World.cpp(114,14): warning C4244: 'initializing': conversion from 'clock_t' to 'float', possible loss of data
   HAPI_Start.vcxproj -> F:\HAPI project\x64\Release\HAPI_Start.exe

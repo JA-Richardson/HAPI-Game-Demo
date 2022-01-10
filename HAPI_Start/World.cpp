@@ -122,8 +122,8 @@ void World::Run()
 		w_vis.ClippedRender("Background", 0, BgY);
 		w_vis.ClippedRender("Background", 0, Bg2Y);
 			
-		BgY = BgY + 0.2 * deltaTime;
-		Bg2Y = Bg2Y + 0.2 * deltaTime;
+		BgY = BgY +=3;
+		Bg2Y = Bg2Y +=3;
 		if (BgY >= 1125)
 			BgY = 0;
 		if (Bg2Y >= 0)
